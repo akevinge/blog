@@ -126,10 +126,10 @@ export default {
 					},
 				},
 				".title": {
-					"@apply text-2xl font-semibold text-accent-2": {},
+					"@apply text-3xl font-semibold text-accent-2": {},
 				},
 				".subtitle": {
-					"@apply text-lg font-semibold text-accent-2": {},
+					"@apply text-xl font-semibold text-accent-2": {},
 				},
 			});
 		}),
