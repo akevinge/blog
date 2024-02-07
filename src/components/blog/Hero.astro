@@ -31,7 +31,8 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		</div>
 	)
 }
-{data.draft ? <span class="text-base text-red-500">(Draft)</span> : null}
+{data.draft ? <span class="text-base text-red-500">(Draft)&nbsp</span> : null}
+{data.unlisted ? <span class="text-base text-red-500">(Unlisted)</span> : null}
 <h1 class="title mb-3 sm:mb-1">
 	{data.title}
 </h1>
@@ -76,7 +77,10 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 						aria-label={`View more blogs with the tag ${tag}`}
 						href={`/tags/${tag}/`}
 						data-pagefind-filter="tag"
-					>{tag}</a>{i < data.tags.length - 1 && ", "}
+					>
+						{tag}
+					</a>
+					{i < data.tags.length - 1 && ", "}
 				</>
 			))}
 		</div>

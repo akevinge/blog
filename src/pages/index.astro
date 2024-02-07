@@ -7,59 +7,35 @@ import { getAllPosts, sortMDByDate } from "@/utils";
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
-
-const cactusTech: Array<{ title: string; desc: string; href: string }> = [
-	{
-		title: "Astro",
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
-	},
-	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-	},
-	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-	},
-	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Satori",
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-	},
-	{
-		title: "Pagefind",
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-	},
-	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-	},
-	{
-		title: "Expressive Code",
-		desc: "Highly customisable source code & syntax highlighter",
-		href: "https://expressive-code.com/",
-	},
-];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hello World!</h1>
-		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on the github icon link below and it will take you to my repo.
-		</p>
+		<h1 class="title mb-4">Hi, I'm Kevin Ge</h1>
+		<p class="mb-2">I’m a Software Engineer and CS student at UTD.</p>
+		<ul class="mb-4 list-inside list-disc">
+			<li>
+				2023 STEP Intern at <a
+					class="text-underline text-link"
+					target="_blank"
+					href="https://google.com">Google</a
+				> on Core SRE.
+			</li>
+			<li>
+				Former Technical Lead for the <a
+					class="text-underline text-link"
+					target="_blank"
+					href="https://utdplanner.com">Nebula Labs Planner</a
+				> team.
+			</li>
+			<li>
+				Former Experience Coordinator on the <a
+					class="text-underline text-link"
+					target="_blank"
+					href="https://x.hackutd.co">HackUTD</a
+				> organizing team.
+			</li>
+		</ul>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
@@ -73,25 +49,5 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 				))
 			}
 		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<dl class="space-y-4">
-			{
-				cactusTech.map(({ href, title, desc }) => (
-					<div class="flex flex-col gap-2 md:flex-row">
-						<dt>
-							<span class="flex">
-								<a href={href} target="_blank" rel="noopener noreferrer" class="cactus-link">
-									{title}
-								</a>
-								:
-							</span>
-						</dt>
-						<dd>{desc}</dd>
-					</div>
-				))
-			}
-		</dl>
 	</section>
 </PageLayout>

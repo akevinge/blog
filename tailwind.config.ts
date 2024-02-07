@@ -29,8 +29,8 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [...fontFamily.sans],
-				serif: [...fontFamily.serif],
+				sans: ["EB Garamond Variable", ...fontFamily.sans],
+				serif: ["EB Garamond Variable", ...fontFamily.serif],
 			},
 			transitionProperty: {
 				height: "height",
@@ -127,6 +127,9 @@ export default {
 				},
 				".title": {
 					"@apply text-2xl font-semibold text-accent-2": {},
+				},
+				".subtitle": {
+					"@apply text-lg font-semibold text-accent-2": {},
 				},
 			});
 		}),
