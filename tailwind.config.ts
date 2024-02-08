@@ -126,7 +126,7 @@ export default {
 					},
 				},
 				".title": {
-					"@apply text-3xl font-semibold text-accent-2": {},
+					"@apply text-5xl font-semibold text-accent-2": {},
 				},
 				".subtitle": {
 					"@apply text-xl font-semibold text-accent-2": {},
