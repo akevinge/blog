@@ -15,7 +15,7 @@ export async function getAllPostsExcludeUnlisted() {
 }
 
 export function excludeUnlisted(posts: Array<CollectionEntry<"post">>) {
-  return posts.filter((p) => import.meta.env.PROD ? !data.unlisted : true);
+	return posts.filter((p) => (import.meta.env.PROD ? !p.data.unlisted : true));
 }
 
 export function sortMDByDate(posts: Array<CollectionEntry<"post">>) {
@@ -24,15 +24,4 @@ export function sortMDByDate(posts: Array<CollectionEntry<"post">>) {
 		const bDate = new Date(b.data.updatedDate ?? b.data.publishDate).valueOf();
 		return bDate - aDate;
 	});
-}
-/** Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so. */
-export function getUniqueTagsWithCount(
-	posts: Array<CollectionEntry<"post">>,
-): Array<[string, number]> {
-	return [
-		...getAllTags(posts).reduce(
-			(acc, t) => acc.set(t, (acc.get(t) || 0) + 1),
-			new Map<string, number>(),
-		),
-	].sort((a, b) => b[1] - a[1]);
 }
