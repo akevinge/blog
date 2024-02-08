@@ -4,8 +4,18 @@ import { getCollection } from "astro:content";
 /** Note: this function filters out draft posts based on the environment */
 export async function getAllPosts() {
 	return await getCollection("post", ({ data }) => {
+		return import.meta.env.PROD ? !data.draft : true;
+	});
+}
+
+export async function getAllPostsExcludeUnlisted() {
+	return await getCollection("post", ({ data }) => {
 		return import.meta.env.PROD ? !data.draft && !data.unlisted : true;
 	});
+}
+
+export function excludeUnlisted(posts: Array<CollectionEntry<"post">>) {
+  return posts.filter((p) => import.meta.env.PROD ? !data.unlisted : true);
 }
 
 export function sortMDByDate(posts: Array<CollectionEntry<"post">>) {

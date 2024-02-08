@@ -4,7 +4,7 @@ import type { CollectionEntry } from "astro:content";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import Pagination from "@/components/Paginator";
-import { getAllPosts, sortMDByDate } from "@/utils";
+import { getAllPosts, excludeUnlisted, sortMDByDate } from "@/utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	const allPosts = await getAllPosts();
@@ -45,7 +45,7 @@ const paginationProps = {
 		<section aria-label="Blog post list">
 			<ul class="space-y-8 text-start">
 				{
-					page.data.map((p) => (
+					excludeUnlisted(page.data).map((p) => (
 						<li class="flex flex-col flex-wrap gap-2 sm:flex-row [&_q]:basis-full">
 							<PostPreview post={p} as="h2" withDesc />
 						</li>
