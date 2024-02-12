@@ -11,9 +11,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-4">Hi, I'm Kevin Ge</h1>
-		<p class="mb-2">I’m a Software Engineer and CS student at UTD.</p>
-		<ul class="mb-4 list-inside list-disc">
+		<h1 class="title sm:text-5xl text-4xl mb-4">Hi, I'm Kevin Ge</h1>
+		<p class=" mb-2">I’m a Software Engineer and CS student at UTD.</p>
+		<ul class="mb-4 list-inside list-disc text-xl sm:text-2xl">
 			<li>
 				2023 STEP Intern at <a
 					class="text-underline text-link"
@@ -38,8 +38,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		</ul>
 		<SocialList />
 	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-2xl">Posts</h2>
+	<section aria-label="Blog post list" class="mt-16 text-xl sm:text-2xl">
+		<h2 class="title mb-4 text-2xl sm:text-3xl">Posts</h2>
 		<ul class="space-y-4">
 			{
 				allPostsByDate.map((p) => (
