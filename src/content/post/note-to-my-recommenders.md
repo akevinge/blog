@@ -1,7 +1,7 @@
 ---
 title: "Note to My Recommenders"
 description: "This is a brief explanation of who I am and a listing of my trials, tribulations, and accomplishments during my college career."
-publishDate: "08 Feb. 2023"
+publishDate: "08 Feb. 2024"
 draft: false
 unlisted: true
 ---
