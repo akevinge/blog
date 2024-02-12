@@ -12,6 +12,6 @@ I sit at the forefront of a library with four other panelists, patiently waiting
 
 I wonder if Claudia, a manager at Google and my biggest inspiration, feels the same way when she imparts her endless wisdom to me. Or if Caleb, my project lead at Nebula Labs, knew he was changing the trajectory of my life. Do they know the importance of the space they created, a space where, in their presence, no question is too trivial, no ambition too lofty, no mistake anything but a stepping stone for greater achievement?
 
-It is because of them that I found my footing as a trusted teammate and an empowering leader; discovered joy in advising my underclassmen; and the reason I applied to be an Association of Computer Machinery (ACM) mentor this semester. As mentors, we are acutely aware of our role - not just as teachers, but as catalysts for change, inspiring others to dream bigger, reach higher, and shine brighter.
+It is because of them that I found my footing as a trusted teammate and an empowering leader; discovered joy in advising my underclassmen; and applied to be an Association of Computer Machinery (ACM) mentor this semester. As mentors, we are acutely aware of our role - not just as teachers, but as catalysts for change, inspiring others to dream bigger, reach higher, and shine brighter.
 
 As life’s most fervent mentor and mentee, I seek to inspire and be inspired.
