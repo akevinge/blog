@@ -1,6 +1,6 @@
 ---
 title: "Mentorship"
-description: "The role of mentorship has played and continues to play in my life."
+description: "There is something simply beautiful about inspiring others and being inspired. As a lifelong mentee and mentor, mentorship has played and continues to extremely important role in my life."
 publishDate: "12 Feb. 2024"
 draft: false
 unlisted: true
