@@ -10,12 +10,15 @@ import icon from "astro-icon";
 import expressiveCode from "astro-expressive-code";
 import { expressiveCodeOptions } from "./src/site.config";
 
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+
 // https://astro.build/config
 export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://gekevin.com/",
 	markdown: {
-		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
+		remarkPlugins: [remarkUnwrapImages, remarkReadingTime, remarkMath],
 		rehypePlugins: [
 			[
 				rehypeExternalLinks,
@@ -24,6 +27,7 @@ export default defineConfig({
 					rel: ["nofollow, noopener, noreferrer"],
 				},
 			],
+      rehypeKatex,
 		],
 		remarkRehype: {
 			footnoteLabelProperties: {
