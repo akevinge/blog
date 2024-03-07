@@ -27,7 +27,7 @@ export default defineConfig({
 					rel: ["nofollow, noopener, noreferrer"],
 				},
 			],
-      rehypeKatex,
+			rehypeKatex,
 		],
 		remarkRehype: {
 			footnoteLabelProperties: {
