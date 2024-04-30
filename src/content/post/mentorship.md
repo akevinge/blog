@@ -3,7 +3,7 @@ title: "Mentorship"
 description: "As a lifelong mentee and mentor, mentorship has played and continues to play an extremely important role in my life."
 publishDate: "12 Feb. 2024"
 draft: false
-unlisted: true
+unlisted: false
 ---
 
 _Inspired by Caleb and Claudia, the most amazing people I've ever met, and written for CMU's 2024 transfer application prompt: Consider your application as a whole. What do you personally want to emphasize about your application for the admission committee's consideration? Highlight something that's important to you or something you haven't had a chance to share. Tell us, don't show us._
